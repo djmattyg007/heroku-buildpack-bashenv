@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#this pack is valid for all apps
+echo "bashenv"
+exit 0

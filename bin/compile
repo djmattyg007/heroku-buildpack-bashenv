@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "-----> Install custom bash environment modifications"
+
+BUILD_DIR=$1
+PROFILE_DIR="$BUILD_DIR/.profile.d"
+BP_DIR=$(cd $(dirname $0); cd ..; pwd)
+
+cp $BP_DIR/conf/*.sh $PROFILE_DIR/
