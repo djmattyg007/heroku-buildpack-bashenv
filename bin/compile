@@ -6,4 +6,5 @@ BUILD_DIR=$1
 PROFILE_DIR="$BUILD_DIR/.profile.d"
 BP_DIR=$(cd $(dirname $0); cd ..; pwd)
 
+mkdir -p $PROFILE_DIR
 cp $BP_DIR/conf/*.sh $PROFILE_DIR/
